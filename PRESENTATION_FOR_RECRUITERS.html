@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation — Task & Time Management | For Recruiters</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      padding: 24px;
+    }
+    .slide {
+      background: #fff;
+      border-radius: 8px;
+      padding: 32px 40px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .slide h1 { margin: 0 0 8px; font-size: 1.5rem; color: #0f172a; }
+    .slide h2 { margin: 0 0 16px; font-size: 1.1rem; color: #334155; font-weight: 600; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+    .slide ul { margin: 0 0 12px; padding-left: 1.25rem; }
+    .slide li { margin-bottom: 6px; }
+    .slide p { margin: 0 0 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; }
+    th { background: #f8fafc; color: #475569; font-weight: 600; }
+    .tagline { color: #64748b; font-size: 13px; margin-bottom: 20px; }
+    .repo { background: #f1f5f9; padding: 10px 14px; border-radius: 6px; font-weight: 500; margin: 12px 0; }
+    .footer { text-align: center; color: #64748b; font-size: 12px; margin-top: 24px; }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .slide { box-shadow: none; border: 1px solid #e2e8f0; margin-bottom: 20px; page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>Task & Time Management Web App</h1>
+    <p class="tagline">Problem 5 — Presentation for Recruiters</p>
+    <h2>Problem Statement</h2>
+    <p>Build a task management system that helps users organize tasks with <strong>deadlines</strong> and <strong>priorities</strong>.</p>
+    <p><strong>Scope:</strong> Frontend-only (HTML, CSS, JavaScript) with persistent storage in the browser.</p>
+  </div>
+
+  <div class="slide">
+    <h2>Our Creative Approach</h2>
+    <ul>
+      <li><strong>Clean, focused UI</strong> — Single-page app: add task → see list → filter → edit/complete/delete.</li>
+      <li><strong>No backend</strong> — Data lives in the browser via <code>localStorage</code>; no server or database.</li>
+      <li><strong>Accessibility & UX</strong> — Semantic HTML, ARIA, keyboard support (e.g. Escape to close edit), responsive layout.</li>
+      <li><strong>Visual clarity</strong> — Priority by color (border + badge); due dates as “Today”/“Tomorrow”; overdue highlighted.</li>
+    </ul>
+  </div>
+
+  <div class="slide">
+    <h2>Mandatory Features Delivered</h2>
+    <table>
+      <tr><th>Feature</th><th>Implementation</th></tr>
+      <tr><td>Add / Edit / Delete tasks</td><td>Form to add; modal to edit; delete with confirmation; all sync to storage.</td></tr>
+      <tr><td>Priority levels</td><td>Low, Medium, High, Urgent — stored and shown with distinct styling.</td></tr>
+      <tr><td>Due date tracking</td><td>Date picker, smart labels (Today/Tomorrow), overdue highlighting.</td></tr>
+      <tr><td>Filter (Today / Pending / Completed)</td><td>Tabs: All, Today, Pending, Completed; instant client-side filtering.</td></tr>
+      <tr><td>Persistent storage</td><td><code>localStorage</code>; save on every change; data restored on load.</td></tr>
+    </table>
+  </div>
+
+  <div class="slide">
+    <h2>Tech Stack & Repository</h2>
+    <ul>
+      <li><strong>HTML5</strong> — Structure, forms, modal, list.</li>
+      <li><strong>CSS3</strong> — Variables, Flexbox, dark theme, responsive design.</li>
+      <li><strong>JavaScript (ES6+)</strong> — Vanilla JS; no frameworks; clear separation of data and DOM logic.</li>
+    </ul>
+    <p class="repo">Repository: [Insert your GitHub repository link here]</p>
+    <p><strong>To run:</strong> Open <code>index.html</code> in a browser or use a local static server. No build or install required.</p>
+  </div>
+
+  <div class="slide">
+    <h2>Takeaways</h2>
+    <ul>
+      <li>All required features delivered in a single, consistent UI.</li>
+      <li>HTML, CSS, and JS used to mark, store, and retrieve task records dynamically.</li>
+      <li>Data persists across sessions via <code>localStorage</code>.</li>
+      <li>Code and docs are in the repo for recruiters to review.</li>
+    </ul>
+    <p><strong>Thank you.</strong></p>
+    <p>Team: [Your team names] &nbsp;|&nbsp; Contact / LinkedIn: [Optional]</p>
+  </div>
+
+  <p class="footer">Task & Time Management — Problem 5. Save this page as PDF: File → Print → Save as PDF.</p>
+</body>
+</html>
